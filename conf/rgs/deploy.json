@@ -154,6 +154,16 @@
                 "roogoods-center",
                 "pay-server"
             ],
+            "host-rgs-pro-process-01": [
+                "roogoods-center",
+                "roogoods-ad-center",
+                "commonbiz-process"
+            ],
+            "host-rgs-pro-process-02": [
+                "roogoods-center",
+                "roogoods-ad-center",
+                "order-process"
+            ],
             "host-rgs-pro-node-01": [
                 "search-server",
                 "ad-api",
@@ -173,16 +183,6 @@
                 "data",
                 "integralapi"
             ], 
-            "host-rgs-pro-process-01": [
-                "roogoods-center",
-                "roogoods-ad-center",
-                "commonbiz-process"
-            ],
-            "host-rgs-pro-process-02": [
-                "roogoods-center",
-                "roogoods-ad-center",
-                "order-process"
-            ],
             "host-rgs-pro-integral-java-01": [
                 "roogoods-integral-center",
                 "integral-firewall-process",
@@ -197,7 +197,7 @@
                 "integral-data-process",
                 "integral-process"
             ],
-            "host-rgs-pro-integral-robot-02": [
+            "host-rgs-pro-integral-process-02": [
                 "roogoods-integral-center",
                 "integral-prizepool-process",
                 "integral-proxy-process"
