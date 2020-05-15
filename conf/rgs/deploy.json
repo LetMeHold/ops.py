@@ -57,7 +57,7 @@
                 "roogoods-ad-center",
                 "roogoods-center",
                 "roogoods-stats-center",
-                "roogoods-stats-process",
+                "stats-process",
                 "roogoods-toutiao-process",
                 "cms-process",
                 "bid-process",
@@ -97,18 +97,6 @@
                 "online-bata-process",
                 "integral-server",
                 "integralapi"
-            ],
-            "host-rgs-test-hadoop-01": [
-                "hadoop",
-                "spark-exposure-statistics",
-                "spark-hot-statistics",
-                "spark-similarity-matrix-calculus"
-            ],
-            "host-rgs-test-hadoop-02": [
-                "hadoop"
-            ],
-            "host-rgs-test-hadoop-03": [
-                "hadoop"
             ]
         }
     },
@@ -144,95 +132,75 @@
             "host-rgs-pro-data-01": [
                 "roogoods-bata-center",
                 "roogoods-stats-center",
-                "roogoods-stats-process",
-                "roogoods-toutiao-process",
-                "cms-process",
-                "data-server"
+                "cms-process"
             ],
             "host-rgs-pro-data-02": [
                 "roogoods-bata-center",
                 "roogoods-stats-center",
-                "bata-process",
-                "data-process",
-                "rc-process",
-                "data-server"
+                "bata-process"
+            ],
+            "host-rgs-pro-dubbo-01": [
+                "recommend-process"
+            ],
+            "host-rgs-pro-dubbo-02": [
+                "stats-process"
             ],
             "host-rgs-pro-java-01": [
                 "roogoods-center",
-                "monitor-server"
+                "monitor-server",
+                "pay-server"
             ],
             "host-rgs-pro-java-02": [
-                "roogoods-center"
+                "roogoods-center",
+                "pay-server"
             ],
             "host-rgs-pro-node-01": [
-                "weixin-process",
                 "search-server",
-                "roogoods-ad-center",
-                "activity-api",
                 "ad-api",
                 "api",
                 "auth",
                 "cms",
                 "cmsTimer",
                 "data",
-                "data_channel",
                 "integralapi"
             ], 
             "host-rgs-pro-node-02": [
                 "search-server",
-                "roogoods-ad-center",
-                "activity-api",
                 "ad-api",
                 "api",
                 "auth",
                 "cms",
                 "data",
-                "data_channel",
                 "integralapi"
             ], 
             "host-rgs-pro-process-01": [
-                "roogoods-center"
+                "roogoods-center",
+                "roogoods-ad-center",
+                "commonbiz-process"
             ],
             "host-rgs-pro-process-02": [
-                "roogoods-center"
+                "roogoods-center",
+                "roogoods-ad-center",
+                "order-process"
             ],
             "host-rgs-pro-integral-java-01": [
                 "roogoods-integral-center",
-                "integral-server",
-                "online-bata-process",
-                "integral-firewall-process"
+                "integral-firewall-process",
+                "integral-server"
             ],
             "host-rgs-pro-integral-java-02": [
                 "roogoods-integral-center",
-                "online-bata-process",
                 "integral-server"
             ],
-            "host-rgs-pro-integral-robot-01": [
+            "host-rgs-pro-integral-process-01": [
                 "roogoods-integral-center",
-                "integral-process",
-                "integral-data-process"
+                "integral-data-process",
+                "integral-process"
             ],
             "host-rgs-pro-integral-robot-02": [
                 "roogoods-integral-center",
                 "integral-prizepool-process",
                 "integral-proxy-process"
-            ],
-            "host-rgs-pro-hadoop-01": [
-                "hadoop",
-                "spark-exposure-statistics",
-                "spark-hot-statistics",
-                "spark-similarity-matrix-calculus",
-                "rgs-data-clean",
-                "exposure-spark",
-                "rc-spark",
-                "rc-spark-realtime",
-                "rc-timer"
-            ],
-            "host-rgs-pro-hadoop-02": [
-                "hadoop"
-            ],
-            "host-rgs-pro-hadoop-03": [
-                "hadoop"
             ]
         }
     }

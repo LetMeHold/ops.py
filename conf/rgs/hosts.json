@@ -3,9 +3,6 @@
     "host-rgs-dev-integral": "172.18.27.93",
     "host-rgs-test": "172.18.27.96",
     "host-rgs-test-integral": "172.18.203.213",
-    "host-rgs-test-hadoop-01": "",
-    "host-rgs-test-hadoop-02": "",
-    "host-rgs-test-hadoop-03": "",
     "host-rgs-pro-tengine": "172.18.27.98",
     "host-rgs-pro-data-01": "172.18.27.101",
     "host-rgs-pro-data-02": "172.18.203.217",
@@ -17,11 +14,8 @@
     "host-rgs-pro-node-02": "172.18.203.214",
     "host-rgs-pro-dubbo-01": "172.18.27.100",
     "host-rgs-pro-dubbo-02": "172.18.203.216",
-    "host-rgs-pro-hadoop-01": "",
-    "host-rgs-pro-hadoop-02": "",
-    "host-rgs-pro-hadoop-03": "",
-    "host-rgs-pro-integral-java-01": "",
-    "host-rgs-pro-integral-java-02": "",
-    "host-rgs-pro-integral-robot-01": "",
-    "host-rgs-pro-integral-robot-02": ""
+    "host-rgs-pro-integral-java-01": "172.18.27.108",
+    "host-rgs-pro-integral-java-02": "172.18.203.226",
+    "host-rgs-pro-integral-process-01": "172.18.27.107",
+    "host-rgs-pro-integral-process-02": "172.18.203.225"
 }

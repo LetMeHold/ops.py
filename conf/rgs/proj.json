@@ -173,12 +173,12 @@
         "svnsuf": "server/process/integral-proxy-process",
         "cnfsuf": "server/process/config/integral-proxy-process"
     },
-    "roogoods-stats-process": {
+    "stats-process": {
         "form": "process",
-        "pack": "roogoods-stats-process-assembly.zip",
-        "appdir": "roogoods-stats-process",
-        "svnsuf": "server/process/roogoods-stats-process",
-        "cnfsuf": "server/process/config/roogoods-stats-process"
+        "pack": "stats-process-assembly.zip",
+        "appdir": "stats-process",
+        "svnsuf": "server/process/stats-process",
+        "cnfsuf": "server/process/config/stats-process"
     },
     "roogoods-toutiao-process": {
         "form": "process",
@@ -249,12 +249,12 @@
     "api": {
         "form": "node",
         "appdir": "api",
-        "svnsuf": "server/roogoods"
+        "svnsuf": "server/nodejs/roogoods"
     },
     "integralapi": {
         "form": "node",
         "appdir": "integral-api",
-        "svnsuf": "server/roogoods-integral"
+        "svnsuf": "server/nodejs/roogoods-integral"
     },
     "auth": {
         "form": "node",
@@ -285,7 +285,7 @@
         "form": "static",
         "pack": "webwap.tar.gz",
         "appdir": "web/wap",
-        "svnsuf": "web/web"
+        "svnsuf": "web/wap"
     },
     "webwap_cdn": {
         "form": "static",
