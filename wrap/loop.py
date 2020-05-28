@@ -454,6 +454,7 @@ class Loop(Cmd):
             if mod != None:
                 for ip in mod.deploy():
                     self.do_local('ssh %s' % ip)
+                    break
         elif GL.hosts().has_key(arg):
             self.do_local('ssh %s' % GL.getRealIP(arg))
         elif GL.ipHosts().has_key(arg):

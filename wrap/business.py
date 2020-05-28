@@ -248,11 +248,11 @@ def up_web(mod, patch=False):
         GL.LOG.error('未发现更新包：%s' % mod.pk())
         return
     tmp = '%s/%s' % (GL.pkdir(),mod.name())
-    localCmd('ls -ld %s %s' % (mod.pk(),tmp))
+    localCmd('ls -ldtr %s %s' % (mod.pk(),tmp))
     localCmd('mkdir -p %s' % tmp)
     localCmd('rm -rf %s/*' % tmp)
     localCmd('tar -xf %s -C %s' % (mod.pk(),tmp))
-    localCmd('ls -ld %s %s' % (mod.pk(),tmp))
+    localCmd('ls -ldtr %s %s' % (mod.pk(),tmp))
     src = '%s/dist' % tmp
     if os.path.exists(src) == False:
         GL.LOG.error('未发现目录: %s' % src)

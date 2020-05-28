@@ -172,6 +172,7 @@
                 "cms",
                 "cmsTimer",
                 "data",
+                "data_channel",
                 "integralapi"
             ], 
             "host-rgs-pro-node-02": [
@@ -181,6 +182,7 @@
                 "auth",
                 "cms",
                 "data",
+                "data_channel",
                 "integralapi"
             ], 
             "host-rgs-pro-integral-java-01": [
