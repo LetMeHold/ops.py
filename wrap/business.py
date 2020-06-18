@@ -1050,6 +1050,9 @@ def set(var, val=None):
         GL.setIssue(val)
 
 def jenkinsBuild(mod):
+    if GL.env() != "pro":
+        monitor("save", mod)
+        monitor("close", mod)
     GL.jks.build_job(mod.jenkinsJob())
     time.sleep(1)
     jenkinsInfo(mod)

@@ -320,6 +320,21 @@ class Loop(Cmd):
         monitor show <工程名>           显示指定工程的jobs和queues，和它们的运行状态
         monitor <start/close> <工程名>  开启/关闭已save中对应工程的jobs和queues'''
 
+    def do_devclose(self, proj):
+        if proj!=None and proj!='' and GL.env()!="pro":
+            mod = getMod(proj)
+            if mod != None:
+                monitor("save", mod)
+                monitor("close", mod)
+            else:
+                self.help_devclose()
+        else:
+            self.help_devclose()
+
+    def help_devclose(self):
+        print '''用于开发测试环境，直接关闭指定工程当前所有定时任务和队列监控，用法：
+        devclose <工程名>'''
+
     def do_dubbo(self, arg):
         args = arg.split(None, 2)
         if len(args)==2 and (args[0]=='disable' or args[0]=='enable'):
