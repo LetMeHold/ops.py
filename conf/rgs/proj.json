@@ -145,6 +145,13 @@
         "svnsuf": "server/process/integral-process",
         "cnfsuf": "server/process/config/integral-process"
     },
+    "integral-bingo-process": {
+        "form": "process",
+        "pack": "integral-bingo-process-assembly.zip",
+        "appdir": "integral-bingo-process",
+        "svnsuf": "server/process/integral-bingo-process",
+        "cnfsuf": "server/process/config/integral-bingo-process"
+    },
     "integral-data-process": {
         "form": "process",
         "pack": "integral-data-process-assembly.zip",
