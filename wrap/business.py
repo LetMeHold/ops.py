@@ -944,6 +944,8 @@ def monitor(opt, mod):
     elif opt=='start' or opt=='close':
         jobs = GL.closeJobs()
         queues = GL.closeQueues()
+        if len(jobs)==0 and len(queues)==0:
+            return
         if opt == 'start':
             info = '开启'
             status = True
@@ -1050,7 +1052,7 @@ def set(var, val=None):
         GL.setIssue(val)
 
 def jenkinsBuild(mod):
-    if GL.env() != "pro":
+    if GL.env()!="pro" and mod.form()!="center":
         monitor("save", mod)
         monitor("close", mod)
     GL.jks.build_job(mod.jenkinsJob())
