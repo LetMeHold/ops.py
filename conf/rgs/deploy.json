@@ -177,6 +177,7 @@
                 "recommend-process"
             ],
             "host-rgs-pro-dubbo-02": [
+                "integral-bingo-process",
                 "stats-process"
             ],
             "host-rgs-pro-java-01": [
