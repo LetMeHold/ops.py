@@ -1,9 +1,0 @@
-{
-    "host-rlm-dev": "172.18.27.56",
-    "host-rlm-test": "172.18.203.177",
-    "host-rlm-pro-tengine": "172.18.203.178",
-    "host-rlm-pro-node-01": "172.18.27.72",
-    "host-rlm-pro-node-02": "172.18.203.188",
-    "host-rlm-pro-java-01": "172.18.27.71",
-    "host-rlm-pro-java-02": "172.18.203.187"
-}

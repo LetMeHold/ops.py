@@ -53,10 +53,11 @@ class Loop(Cmd):
         GL.initJenkins()
         GL.LOG = getLogger('TheLogger', 'ops-toolkit.log')
 
-        intro_pro = GL.conf()[GL.project()]['intro']
+        intro_proj = GL.conf()[GL.project()]['intro']
+        intro_proj = cipher(GL.key(),intro_proj, False)
         intro_env = GL.deploy()[GL.env()]['intro']
-        self.intro = '进入运维工具事件循环，项目：%s，选择的环境是：%s。' % (intro_pro,intro_env)
-        self.prompt = "运维 %s %s ->> " % (intro_pro,intro_env)
+        self.intro = '进入运维工具事件循环，项目：%s，选择的环境是：%s。' % (intro_proj,intro_env)
+        self.prompt = "运维 %s %s ->> " % (intro_proj,intro_env)
         GL.loop = self
 
     #事件循环结束时执行
@@ -213,9 +214,9 @@ class Loop(Cmd):
         print '用法：svn <操作 [info/up/switch/merge/cp/del/ls/ci/cii]> <工程名> [详细路径]'
 
     def do_svncnf(self, arg):
-        if GL.env() == 'dev':
-            GL.LOG.error('开发环境不需要svn操作')
-            return
+        #if GL.env() == 'dev':
+            #GL.LOG.error('开发环境不需要svn操作')
+            #return
         args = arg.split()
         if len(args) != 2:
             self.help_svncnf()

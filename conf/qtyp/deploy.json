@@ -1,0 +1,262 @@
+{
+    "dev": {
+        "intro": "开发环境",
+        "monitor": "172.18.27.36:7092",
+        "mlogin": "login/do_login",
+        "mget_job": "ljob/get_online_ljobs",
+        "mget_queue": "lqueue/get_online_lqueues",
+        "mctl_job": "ljob/send_ljob_status_request",
+        "mctl_queue": "lqueue/send_lqueue_status_request",
+        "mget_center": "dubbo/get_check_servers",
+        "mctl_center": "dubbo/change_check_status",
+        "muser": "root",
+        "mpwd": "a802cc95fbc98015cf4f416d08239d65",
+        "jks_url": "http://localhost:7181/jenkins-dev/",
+        "jks_usr": "admin",
+        "jks_token": "215bd707a99aad52b0c858add260f2ae",
+        "deploy": {
+            "host-qtyp-dev": [
+                "qtyp-ad-center",
+                "qtyp-center",
+                "cms-process",
+                "bid-process",
+                "coupon-server",
+                "monitor-server",
+                "weixin-server",
+                "activity-api",
+                "ad-api",
+                "api",
+                "auth",
+                "cms",
+                "cmsTimer",
+                "data",
+                "data_channel"
+            ],
+            "host-qtyp-dev-integral": [
+            ],
+            "host-qtyp-test-hadoop-01": [
+            ]
+        }
+    },
+    "test": {
+        "intro": "测试环境",
+        "monitor": "172.18.203.167:7092",
+        "mlogin": "login/do_login",
+        "mget_job": "ljob/get_online_ljobs",
+        "mget_queue": "lqueue/get_online_lqueues",
+        "mctl_job": "ljob/send_ljob_status_request",
+        "mctl_queue": "lqueue/send_lqueue_status_request",
+        "mget_center": "dubbo/get_check_servers",
+        "mctl_center": "dubbo/change_check_status",
+        "muser": "root",
+        "mpwd": "a802cc95fbc98015cf4f416d08239d65",
+        "jks_url": "http://localhost:7281/jenkins-test/",
+        "jks_usr": "admin",
+        "jks_token": "1eda2936b59921dc8dc08416f484ef79",
+        "deploy": {
+            "host-qtyp-test": [
+                "webcms",
+                "webwap",
+                "weblandpage",
+                "weblandpagev2",
+                "qtyp-ad-center",
+                "qtyp-center",
+                "qtyp-stats-center",
+                "qtyp-stats-process",
+                "qtyp-toutiao-process",
+                "cms-process",
+                "bid-process",
+                "data-process",
+                "order-process",
+                "prizepool-process",
+                "rc-process",
+                "seckill-process",
+                "weixin-process",
+                "bid-server",
+                "data-server",
+                "monitor-server",
+                "pay-server",
+                "search-server",
+                "weixin-server",
+                "activity-api",
+                "ad-api",
+                "api",
+                "auth",
+                "cms",
+                "cmsTimer",
+                "data",
+                "data_channel"
+            ],
+            "host-qtyp-test-integral": [
+                "qtyp-integral-center",
+                "qtyp-bata-center",
+                "integral-process",
+                "integral-data-process",
+                "integral-firewall-process",
+                "integral-prizepool-process",
+                "integral-proxy-process",
+                "commonbiz-process",
+                "recommend-process",
+                "online-recommend-process",
+                "bata-process",
+                "online-bata-process",
+                "integral-server",
+                "integralapi"
+            ],
+            "host-qtyp-test-hadoop-01": [
+                "hadoop",
+                "spark-exposure-statistics",
+                "spark-hot-statistics",
+                "spark-similarity-matrix-calculus"
+            ],
+            "host-qtyp-test-hadoop-02": [
+                "hadoop"
+            ],
+            "host-qtyp-test-hadoop-03": [
+                "hadoop"
+            ]
+        }
+    },
+    "pro": {
+        "intro": "生产环境",
+        "monitor": "172.18.27.47:7092",
+        "mlogin": "login/do_login",
+        "mget_job": "ljob/get_online_ljobs",
+        "mget_queue": "lqueue/get_online_lqueues",
+        "mctl_job": "ljob/send_ljob_status_request",
+        "mctl_queue": "lqueue/send_lqueue_status_request",
+        "mget_center": "dubbo/get_check_servers",
+        "mctl_center": "dubbo/change_check_status",
+        "muser": "root",
+        "mpwd": "640fe9e4816e90b1612ab04c2f817d6b",
+        "jks_url": "http://localhost:7081/jenkins/",
+        "jks_usr": "admin",
+        "jks_token": "b67a48d844fb221dff0c174d505e92e4",
+        "dadmin": "http://172.18.203.168:4080/dubbo-admin-2.8.4/",
+        "dadmin_auth": "62afe3d635d2eca358225bb46154aec9",
+        "deploy": {
+            "host-qtyp-pro-tengine": [
+                "cdn",
+                "webcms",
+                "webcms_cdn",
+                "weblandpage",
+                "weblandpage_cdn",
+                "weblandpagev2",
+                "weblandpagev2_cdn",
+                "webwap",
+                "webwap_cdn"
+            ],
+            "host-qtyp-pro-data-01": [
+                "qtyp-bata-center",
+                "qtyp-stats-center",
+                "qtyp-stats-process",
+                "qtyp-toutiao-process",
+                "cms-process",
+                "data-server"
+            ],
+            "host-qtyp-pro-data-02": [
+                "qtyp-bata-center",
+                "qtyp-stats-center",
+                "bata-process",
+                "data-process",
+                "rc-process",
+                "data-server"
+            ],
+            "host-qtyp-pro-java-01": [
+                "qtyp-center",
+                "bid-server",
+                "pay-server",
+                "monitor-server",
+                "weixin-server"
+            ],
+            "host-qtyp-pro-java-02": [
+                "qtyp-center",
+                "bid-server",
+                "pay-server",
+                "weixin-server"
+            ],
+            "host-qtyp-pro-node-01": [
+                "weixin-process",
+                "search-server",
+                "qtyp-ad-center",
+                "activity-api",
+                "ad-api",
+                "api",
+                "auth",
+                "cms",
+                "cmsTimer",
+                "data",
+                "data_channel",
+                "integralapi"
+            ], 
+            "host-qtyp-pro-node-02": [
+                "search-server",
+                "qtyp-ad-center",
+                "activity-api",
+                "ad-api",
+                "api",
+                "auth",
+                "cms",
+                "data",
+                "data_channel",
+                "integralapi"
+            ], 
+            "host-qtyp-pro-robot-01": [
+                "online-recommend-process",
+                "qtyp-center"
+            ],
+            "host-qtyp-pro-robot-02": [
+                "online-recommend-process",
+                "qtyp-center"
+            ],
+            "host-qtyp-pro-process-01": [
+                "bid-process",
+                "recommend-process"
+            ],
+            "host-qtyp-pro-process-02": [
+                "commonbiz-process",
+                "order-process",
+                "prizepool-process",
+                "seckill-process"
+            ],
+            "host-qtyp-pro-integral-java-01": [
+                "qtyp-integral-center",
+                "integral-server",
+                "online-bata-process",
+                "integral-firewall-process"
+            ],
+            "host-qtyp-pro-integral-java-02": [
+                "qtyp-integral-center",
+                "online-bata-process",
+                "integral-server"
+            ],
+            "host-qtyp-pro-integral-robot-01": [
+                "qtyp-integral-center",
+                "integral-process",
+                "integral-data-process"
+            ],
+            "host-qtyp-pro-integral-robot-02": [
+                "qtyp-integral-center",
+                "integral-prizepool-process",
+                "integral-proxy-process"
+            ],
+            "host-qtyp-pro-hadoop-01": [
+                "hadoop",
+                "spark-exposure-statistics",
+                "spark-hot-statistics",
+                "spark-similarity-matrix-calculus",
+                "qtyp-data-clean",
+                "exposure-spark",
+                "rc-spark",
+                "rc-spark-realtime",
+                "rc-timer"
+            ],
+            "host-qtyp-pro-hadoop-02": [
+                "hadoop"
+            ],
+            "host-qtyp-pro-hadoop-03": [
+                "hadoop"
+            ]
+        }
+    }
+}

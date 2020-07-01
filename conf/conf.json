@@ -1,22 +1,23 @@
 {
     "rsa_dir": "/mydata/maintenance/identity",
     "log_dir": "/mydata/maintenance/logs",
-    "rgs": {
-        "intro": "袋鼠",
+    "pkdir": "/mydata/maintenance/packages",
+    "qtyp": {
+        "intro": "fe9efad9ddb540f1f2c35cffcfce1cd5",
         "issue": "",
         "svn": "06bfd3fdf4129104b5fe6a505607791d",
-        "pkdir": "/mydata/maintenance/packages"
+        "port": 3690
+    },
+    "rgs": {
+        "intro": "401b594aee297eaabfdde5eafaf34ad2",
+        "issue": "",
+        "svn": "06bfd3fdf4129104b5fe6a505607791d",
+        "port": 3690
     },
     "90s": {
-        "intro": "90秒",
+        "intro": "dc6a13627ed0172205866704b4a6f5db",
         "issue": "",
         "svn": "06bfd3fdf4129104b5fe6a505607791d",
-        "pkdir": "/mydata/maintenance/packages"
-    },
-    "rlm": {
-        "intro": "扔了么",
-        "issue": "",
-        "svn": "6dec116cdc30b03cbd66ad08350abb8b",
-        "pkdir": "/mydata/maintenance/packages-rlm"
+        "port": 3690
     }
 }

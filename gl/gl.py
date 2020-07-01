@@ -58,18 +58,19 @@ def ask(issue, opt, df=None):
 #txt    加密时,待加密的字符串,长度不可以大于16;解密时为待解密的字符串
 #encrypt    True,加密;False,解密
 def cipher(key, txt, encrypt=True):
-    if len(key) > 16:
-        key = key[:15]
-    if len(key) < 16:
-        for n in range(16-len(key)):
+    maxlen = 16
+    if len(key) > maxlen:
+        key = key[:maxlen-1]
+    if len(key) < maxlen:
+        for n in range(maxlen-len(key)):
             key += ' '
     iv = Random.new().read(AES.block_size)
     obj = AES.new(key, AES.MODE_ECB, iv)
     if encrypt:
-        if len(txt) > 16:
-            txt = txt[:15]
-        if len(txt) < 16:
-            for n in range(16-len(txt)):
+        if len(txt) > maxlen:
+            txt = txt[:maxlen-1]
+        if len(txt) < maxlen:
+            for n in range(maxlen-len(txt)):
                 txt += ' '
         en = obj.encrypt(txt)
         return b2a_hex(en)
@@ -125,7 +126,7 @@ class Global:
         self.__dirCfg = '%s/conf' % self.__dirMain  #配置文件目录
         self.__conf = loadJsonFile('%s/conf.json' % self.__dirCfg)
         self.__issue = self.__conf[self.__project]['issue']
-        self.__pkdir = self.__conf[self.__project]['pkdir']
+        self.__pkdir = self.__conf['pkdir']
         self.__deploy = loadJsonFile('%s/%s/deploy.json' % (self.__dirCfg,self.__project))
         self.__form = loadJsonFile('%s/%s/form.json' % (self.__dirCfg,self.__project))
         self.__hosts = loadJsonFile('%s/%s/hosts.json' % (self.__dirCfg,self.__project))
@@ -281,7 +282,11 @@ class Global:
     def svn(self):
         if self.__svn == None:
             tmp = cipher(GL.key(), self.conf()[self.project()]['svn'], False)
-            self.__svn = 'svn://%s' % tmp
+            port = self.conf()[self.project()]['port']
+            if port == 3690:
+                self.__svn = 'svn://%s' % tmp
+            else:
+                self.__svn = 'svn://%s:%d' % (tmp,port)
         return self.__svn
 
     def setBranch(self, new):

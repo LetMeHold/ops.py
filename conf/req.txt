@@ -1,3 +1,5 @@
+jaraco.functools==1.20
+tempora==1.13
 more-itertools==4.3.0
 CherryPy==15.0.0
 cmd2==0.8.5

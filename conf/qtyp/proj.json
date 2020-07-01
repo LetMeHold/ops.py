@@ -1,0 +1,383 @@
+{
+    "qtyp-center": {
+        "form": "center",
+        "pack": "qtyp-provider-1.0.0-assembly.zip",
+        "appdir": "qtyp-provider-1.0.0",
+        "svnsuf": "server/center/qtyp-center",
+        "cnfsuf": "server/center/config/qtyp-center",
+        "port": "20604"
+    },
+    "qtyp-ad-center": {
+        "form": "center",
+        "pack": "qtyp-ad-provider-1.0.0-assembly.zip",
+        "appdir": "qtyp-ad-provider-1.0.0",
+        "svnsuf": "server/center/qtyp-ad-center",
+        "cnfsuf": "server/center/config/qtyp-ad-center",
+        "port": "20605"
+    },
+    "qtyp-bata-center": {
+        "form": "center",
+        "pack": "qtyp-bata-provider-1.0.0-assembly.zip",
+        "appdir": "qtyp-bata-provider-1.0.0",
+        "svnsuf": "server/center/qtyp-bata-center",
+        "cnfsuf": "server/center/config/qtyp-bata-center",
+        "port": "20609"
+    },
+    "qtyp-integral-center": {
+        "form": "center",
+        "pack": "qtyp-integral-provider-1.0.0-assembly.zip",
+        "appdir": "qtyp-integral-provider-1.0.0",
+        "svnsuf": "server/center/qtyp-integral-center",
+        "cnfsuf": "server/center/config/qtyp-integral-center",
+        "port": "20608"
+    },
+    "qtyp-stats-center": {
+        "form": "center",
+        "pack": "qtyp-stats-provider-0.1.0-assembly.zip",
+        "appdir": "qtyp-stats-provider-0.1.0",
+        "svnsuf": "server/center/qtyp-stats-center",
+        "cnfsuf": "server/center/config/qtyp-stats-center",
+        "port": "20606"
+    },
+    "yh798-adsms-center": {
+        "form": "center",
+        "pack": "yh798-adsms-provider-1.0-assembly.zip",
+        "appdir": "yh798-adsms-provider-1.0",
+        "svnsuf": "server/center/yh798-adsms-center",
+        "cnfsuf": "server/center/config/yh798-adsms-center",
+        "port": "20610"
+    },
+    "cms-process": {
+        "form": "process",
+        "pack": "cms-process-assembly.zip",
+        "appdir": "cms-process",
+        "svnsuf": "server/process/cms-process",
+        "cnfsuf": "server/process/config/cms-process"
+    },
+    "bid-process": {
+        "form": "process",
+        "pack": "bid-process-assembly.zip",
+        "appdir": "bid-process",
+        "svnsuf": "server/process/bid-process",
+        "cnfsuf": "server/process/config/bid-process"
+    },
+    "commonbiz-process": {
+        "form": "process",
+        "pack": "commonbiz-process-assembly.zip",
+        "appdir": "commonbiz-process",
+        "svnsuf": "server/process/commonbiz-process",
+        "cnfsuf": "server/process/config/commonbiz-process"
+    },
+    "data-process": {
+        "form": "process",
+        "pack": "data-process-assembly.zip",
+        "appdir": "data-process",
+        "svnsuf": "server/process/data-process",
+        "cnfsuf": "server/process/config/data-process"
+    },
+    "order-process": {
+        "form": "process",
+        "pack": "order-process-assembly.zip",
+        "appdir": "order-process",
+        "svnsuf": "server/process/order-process",
+        "cnfsuf": "server/process/config/order-process"
+    },
+    "prizepool-process": {
+        "form": "process",
+        "pack": "prizepool-process-assembly.zip",
+        "appdir": "prizepool-process",
+        "svnsuf": "server/process/prizepool-process",
+        "cnfsuf": "server/process/config/prizepool-process"
+    },
+    "recommend-process": {
+        "form": "process",
+        "pack": "recommend-process-assembly.zip",
+        "appdir": "recommend-process",
+        "svnsuf": "server/process/recommend-process",
+        "cnfsuf": "server/process/config/recommend-process"
+    },
+    "online-recommend-process": {
+        "form": "process",
+        "pack": "online-recommend-process-assembly.zip",
+        "appdir": "online-recommend-process",
+        "svnsuf": "server/process/online-recommend-process",
+        "cnfsuf": "server/process/config/online-recommend-process"
+    },
+    "bata-process": {
+        "form": "process",
+        "pack": "bata-process-assembly.zip",
+        "appdir": "bata-process",
+        "svnsuf": "server/process/bata-process",
+        "cnfsuf": "server/process/config/bata-process"
+    },
+    "online-bata-process": {
+        "form": "process",
+        "pack": "online-bata-process-assembly.zip",
+        "appdir": "online-bata-process",
+        "svnsuf": "server/process/online-bata-process",
+        "cnfsuf": "server/process/config/online-bata-process"
+    },
+    "rc-process": {
+        "form": "process",
+        "pack": "rc-process-assembly.zip",
+        "appdir": "rc-process",
+        "svnsuf": "server/process/rc-process",
+        "cnfsuf": "server/process/config/rc-process"
+    },
+    "seckill-process": {
+        "form": "process",
+        "pack": "seckill-process-assembly.zip",
+        "appdir": "seckill-process",
+        "svnsuf": "server/process/seckill-process",
+        "cnfsuf": "server/process/config/seckill-process"
+    },
+    "weixin-process": {
+        "form": "process",
+        "pack": "weixin-process-assembly.zip",
+        "appdir": "weixin-process",
+        "svnsuf": "server/process/weixin-process",
+        "cnfsuf": "server/process/config/weixin-process"
+    },
+    "integral-process": {
+        "form": "process",
+        "pack": "integral-process-assembly.zip",
+        "appdir": "integral-process",
+        "svnsuf": "server/process/integral-process",
+        "cnfsuf": "server/process/config/integral-process"
+    },
+    "integral-data-process": {
+        "form": "process",
+        "pack": "integral-data-process-assembly.zip",
+        "appdir": "integral-data-process",
+        "svnsuf": "server/process/integral-data-process",
+        "cnfsuf": "server/process/config/integral-data-process"
+    },
+    "integral-firewall-process": {
+        "form": "process",
+        "pack": "integral-firewall-process-assembly.zip",
+        "appdir": "integral-firewall-process",
+        "svnsuf": "server/process/integral-firewall-process",
+        "cnfsuf": "server/process/config/integral-firewall-process"
+    },
+    "integral-prizepool-process": {
+        "form": "process",
+        "pack": "integral-prizepool-process-assembly.zip",
+        "appdir": "integral-prizepool-process",
+        "svnsuf": "server/process/integral-prizepool-process",
+        "cnfsuf": "server/process/config/integral-prizepool-process"
+    },
+    "integral-proxy-process": {
+        "form": "process",
+        "pack": "integral-proxy-process-assembly.zip",
+        "appdir": "integral-proxy-process",
+        "svnsuf": "server/process/integral-proxy-process",
+        "cnfsuf": "server/process/config/integral-proxy-process"
+    },
+    "qtyp-stats-process": {
+        "form": "process",
+        "pack": "qtyp-stats-process-assembly.zip",
+        "appdir": "qtyp-stats-process",
+        "svnsuf": "server/process/qtyp-stats-process",
+        "cnfsuf": "server/process/config/qtyp-stats-process"
+    },
+    "qtyp-toutiao-process": {
+        "form": "process",
+        "pack": "qtyp-toutiao-process-assembly.zip",
+        "appdir": "qtyp-toutiao-process",
+        "svnsuf": "server/process/qtyp-toutiao-process",
+        "cnfsuf": "server/process/config/qtyp-toutiao-process"
+    },
+    "bid-server": {
+        "form": "newserver",
+        "pack": "bid-server-assembly.zip",
+        "appdir": "bid-server",
+        "svnsuf": "server/server/bid-server",
+        "cnfsuf": "server/server/config/bid-server"
+    },
+    "data-server": {
+        "form": "newserver",
+        "pack": "data-server-assembly.zip",
+        "appdir": "data-server",
+        "svnsuf": "server/server/data-server",
+        "cnfsuf": "server/server/config/data-server"
+    },
+    "monitor-server": {
+        "form": "newserver",
+        "pack": "monitor-server-assembly.zip",
+        "appdir": "monitor-server",
+        "svnsuf": "server/server/monitor-server",
+        "cnfsuf": "server/server/config/monitor-server"
+    },
+    "pay-server": {
+        "form": "newserver",
+        "pack": "pay-server-assembly.zip",
+        "appdir": "pay-server",
+        "svnsuf": "server/server/pay-server",
+        "cnfsuf": "server/server/config/pay-server"
+    },
+    "search-server": {
+        "form": "newserver",
+        "pack": "search-server-assembly.zip",
+        "appdir": "search-server",
+        "svnsuf": "server/server/search-server",
+        "cnfsuf": "server/server/config/search-server"
+    },
+    "weixin-server": {
+        "form": "newserver",
+        "pack": "weixin-server-assembly.zip",
+        "appdir": "weixin-server",
+        "svnsuf": "server/server/weixin-server",
+        "cnfsuf": "server/server/config/weixin-server"
+    },
+    "integral-server": {
+        "form": "newserver",
+        "pack": "integral-server-assembly.zip",
+        "appdir": "integral-server",
+        "svnsuf": "server/server/integral-server",
+        "cnfsuf": "server/server/config/integral-server"
+    },
+    "activity-api": {
+        "form": "node",
+        "appdir": "activity-api",
+        "svnsuf": "server/qtyp-activity"
+    },
+    "ad-api": {
+        "form": "node",
+        "appdir": "ad-api",
+        "svnsuf": "ad/qtyp-ad"
+    },
+    "api": {
+        "form": "node",
+        "appdir": "api",
+        "svnsuf": "server/qtyp"
+    },
+    "integralapi": {
+        "form": "node",
+        "appdir": "integral-api",
+        "svnsuf": "server/qtyp-integral"
+    },
+    "auth": {
+        "form": "node",
+        "appdir": "auth",
+        "svnsuf": "cms/cms_login_server"
+    },
+    "cms": {
+        "form": "node",
+        "appdir": "cms",
+        "svnsuf": "cms/cms_system"
+    },
+    "cmsTimer": {
+        "form": "node",
+        "appdir": "cms",
+        "svnsuf": "cms/cms_system"
+    },
+    "data": {
+        "form": "node",
+        "appdir": "data",
+        "svnsuf": "ad/ad_stats"
+    },
+    "data_channel": {
+        "form": "node",
+        "appdir": "data_channel",
+        "svnsuf": "ad/ad_stats_channel"
+    },
+    "webwap": {
+        "form": "static",
+        "pack": "webwap.tar.gz",
+        "appdir": "web/wap",
+        "svnsuf": "web/web"
+    },
+    "webwap_cdn": {
+        "form": "static",
+        "appdir": "cdn/wap"
+    },
+    "weblandpage": {
+        "form": "static",
+        "pack": "weblandpage.tar.gz",
+        "appdir": "web/landingpage",
+        "svnsuf": "web/landpage"
+    },
+    "weblandpagev2": {
+        "form": "static",
+        "pack": "weblandpagev2.tar.gz",
+        "appdir": "web/landingpage",
+        "svnsuf": "web/landpage_v2"
+    },
+    "weblandpage_cdn": {
+        "form": "static",
+        "appdir": "cdn/landingpage"
+    },
+    "weblandpagev2_cdn": {
+        "form": "static",
+        "appdir": "cdn/landingpage"
+    },
+    "webcms": {
+        "form": "static",
+        "pack": "webcms.tar.gz",
+        "appdir": "web/cms",
+        "svnsuf": "web/qtypcms"
+    },
+    "cdn": {
+        "form": "static",
+        "appdir": "cdn"
+    },
+    "android": {
+        "form": "mobile",
+        "svnsuf": "android"
+    },
+    "ios": {
+        "form": "mobile",
+        "svnsuf": "ios"
+    },
+    "hadoop": {
+        "form": "static"
+    },
+    "spark-exposure-statistics": {
+        "form": "data",
+        "pack": "spark-exposure-statistics-0.0.1-assembly.zip",
+        "appdir": "spark-exposure-statistics-0.0.1",
+        "svnsuf": "server/data/spark-exposure-statistics"
+    },
+    "spark-hot-statistics": {
+        "form": "data",
+        "pack": "spark-hot-statistics-0.0.1-assembly.zip",
+        "appdir": "spark-hot-statistics-0.0.1",
+        "svnsuf": "server/data/spark-hot-statistics"
+    },
+    "spark-similarity-matrix-calculus": {
+        "form": "data",
+        "pack": "spark-similarity-matrix-calculus-0.0.1-assembly.zip",
+        "appdir": "spark-similarity-matrix-calculus-0.0.1",
+        "svnsuf": "server/data/spark-similarity-matrix-calculus"
+    },
+    "qtyp-data-clean": {
+        "form": "data",
+        "pack": "qtyp-data-clean-0.0.1-assembly.zip",
+        "appdir": "qtyp-data-clean-0.0.1",
+        "svnsuf": "server/data/qtyp-data-clean"
+    },
+    "exposure-spark": {
+        "form": "data",
+        "pack": "exposure-spark-0.0.1-assembly.zip",
+        "appdir": "exposure-spark-0.0.1",
+        "svnsuf": "server/data/exposure-spark"
+    },
+    "rc-spark-realtime": {
+        "form": "data",
+        "pack": "rc-spark-realtime-1.0.0-assembly.zip",
+        "appdir": "rc-spark-realtime-1.0.0",
+        "svnsuf": "server/data/rc-spark-realtime"
+    },
+    "rc-spark": {
+        "form": "data",
+        "pack": "rc-spark-1.0.0-assembly.zip",
+        "appdir": "rc-spark-1.0.0",
+        "svnsuf": "server/data/rc-spark"
+    },
+    "rc-timer": {
+        "form": "data",
+        "pack": "rc-timer-1.0.0-assembly.zip",
+        "appdir": "rc-timer-1.0.0",
+        "svnsuf": "server/data/rc-timer"
+    }
+}

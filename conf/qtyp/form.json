@@ -1,13 +1,12 @@
 {
     "bakdir": "/mydata/maintenance/backup", 
-    "trunk": "codes/trunk_rleme",
-    "branch": "codes/branches_rleme/{issue}",
-    "tag": "codes/tags_rleme/{issue}",
-    "wcopy": "/mydata/maintenance/svn/tags_rleme/{issue}",
-    "test.branch": "codes/test_rleme/{issue}",
-    "test.wcopy": "/mydata/maintenance/svn/test_rleme/{issue}",
+    "trunk": "codes/trunk_qtyp",
+    "branch": "codes/branches_qtyp/{issue}",
+    "tag": "codes/tags_qtyp/{issue}",
+    "wcopy": "/mydata/maintenance/svn/tags_qtyp/{issue}",
+    "test.branch": "codes/test_qtyp/{issue}",
+    "test.wcopy": "/mydata/maintenance/svn/test_qtyp/{issue}",
     "logdir": "/mydata/logs",
-    "jks_suffix": "_",
     "center": {
         "appdir": "/mydata/center",
         "cnfdir": "/data/config/center",
@@ -35,15 +34,12 @@
     "node": {
         "appdir": "/mydata/nodeproj"
     },
-    "npm": {
-        "appdir": "/mydata/nodeproj"
-    },
     "static": {
         "appdir": "/mydata"
     },
     "data": {
-        "appdir": "/mydata/stats",
-        "updir": "/mydata/stats/zip"
+        "appdir": "/mydata/spark-qtyp-{env}",
+        "updir": "/mydata/spark-qtyp-{env}/zip"
     },
     "mobile": {
     }
