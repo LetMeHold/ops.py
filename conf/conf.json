@@ -6,18 +6,18 @@
         "intro": "fe9efad9ddb540f1f2c35cffcfce1cd5",
         "issue": "",
         "svn": "06bfd3fdf4129104b5fe6a505607791d",
-        "port": 3690
+        "port": 8888
     },
     "rgs": {
         "intro": "401b594aee297eaabfdde5eafaf34ad2",
         "issue": "",
         "svn": "06bfd3fdf4129104b5fe6a505607791d",
-        "port": 3690
+        "port": 8888
     },
     "90s": {
         "intro": "dc6a13627ed0172205866704b4a6f5db",
         "issue": "",
         "svn": "06bfd3fdf4129104b5fe6a505607791d",
-        "port": 3690
+        "port": 8888
     }
 }
