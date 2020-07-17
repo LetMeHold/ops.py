@@ -7,6 +7,7 @@ class Model:
     def __init__(self, name):
         self.__name = name
         self.__form = GL.proj()[name]['form']
+        self.__hosts = []
         self.__deploy = []
         self.__appdir = None
         self.__upappdir = None
@@ -36,6 +37,15 @@ class Model:
 
     def tomcat(self):
         return GL.proj()[self.name()]['tomcat']
+
+    def hosts(self):
+        if len(self.__hosts) == 0:
+            ips = GL.deploy()[GL.env()]['deploy']
+            for ip in ips:
+                for t in ips[ip]:
+                    if t == self.name():
+                        self.__hosts.append(ip)
+        return self.__hosts
 
     def deploy(self):
         if len(self.__deploy) == 0:

@@ -368,6 +368,7 @@ class Loop(Cmd):
             mod = getMod(arg)
             if mod != None:
                 print dumpJson(mod.deploy())
+                print dumpJson(mod.hosts())
                 print dumpJson(GL.proj()[arg])
         elif GL.dplHosts().has_key(arg):
             print dumpJson(GL.dplHosts()[arg])
