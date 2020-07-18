@@ -11,9 +11,9 @@
         "mctl_center": "dubbo/change_check_status",
         "muser": "root",
         "mpwd": "a802cc95fbc98015cf4f416d08239d65",
-        "jks_url": "http://localhost:7181/jenkins-dev/",
+        "jks_url": "http://localhost:7181/jenkins/",
         "jks_usr": "admin",
-        "jks_token": "215bd707a99aad52b0c858add260f2ae",
+        "jks_token": "7d7145443824373d78da8f6739c7d976",
         "deploy": {
             "host-90s-dev": [
                 "90bid-ad-center",
@@ -50,9 +50,9 @@
         "mctl_center": "dubbo/change_check_status",
         "muser": "root",
         "mpwd": "a802cc95fbc98015cf4f416d08239d65",
-        "jks_url": "http://localhost:7281/jenkins-test/",
+        "jks_url": "http://localhost:7181/jenkins/",
         "jks_usr": "admin",
-        "jks_token": "1eda2936b59921dc8dc08416f484ef79",
+        "jks_token": "7d7145443824373d78da8f6739c7d976",
         "deploy": {
             "host-90s-test": [
                 "webcms",
@@ -129,9 +129,9 @@
         "mctl_center": "dubbo/change_check_status",
         "muser": "root",
         "mpwd": "640fe9e4816e90b1612ab04c2f817d6b",
-        "jks_url": "http://localhost:7081/jenkins/",
+        "jks_url": "http://localhost:7181/jenkins/",
         "jks_usr": "admin",
-        "jks_token": "b67a48d844fb221dff0c174d505e92e4",
+        "jks_token": "7d7145443824373d78da8f6739c7d976",
         "dadmin": "http://172.18.203.168:4080/dubbo-admin-2.8.4/",
         "dadmin_auth": "62afe3d635d2eca358225bb46154aec9",
         "deploy": {
