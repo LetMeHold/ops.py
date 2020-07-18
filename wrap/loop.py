@@ -364,12 +364,12 @@ class Loop(Cmd):
             print cipher(GL.key(),arg, False)
 
     def do_info(self, arg):
-        if GL.proj().has_key(arg):
+        if GL.proj().has_key(arg) or arg=='!$':
             mod = getMod(arg)
             if mod != None:
                 print dumpJson(mod.deploy())
                 print dumpJson(mod.hosts())
-                print dumpJson(GL.proj()[arg])
+                print dumpJson(GL.proj()[mod.name()])
         elif GL.dplHosts().has_key(arg):
             print dumpJson(GL.dplHosts()[arg])
         elif arg == 'all':

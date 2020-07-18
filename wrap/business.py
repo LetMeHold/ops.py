@@ -10,7 +10,12 @@ def cmd(ip_list, cmd, cmdask):
             out = ask('将在 (%s) 运行命令 (%s), 确认立刻执行吗？' % (ip,cmd), 'yes,no', 'no')
             if out == 'no':
                 continue
-        remoteCmd(ip, cmd)
+        try:
+            remoteCmd(ip, cmd)
+        except:
+            out = ask('出现错误，是否继续？', 'yes,no', 'no')
+            if out == 'no':
+                break
 
 def scp(ip_list, src, dest):
     for ip in ip_list:
