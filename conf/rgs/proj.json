@@ -334,7 +334,7 @@
     },
     "ios": {
         "form": "mobile",
-        "svnsuf": "ios"
+        "svnsuf": "iOS"
     },
     "hadoop": {
         "form": "static"
