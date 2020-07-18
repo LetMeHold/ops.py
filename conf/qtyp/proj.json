@@ -173,12 +173,12 @@
         "svnsuf": "server/process/integral-proxy-process",
         "cnfsuf": "server/process/config/integral-proxy-process"
     },
-    "qtyp-stats-process": {
+    "stats-process": {
         "form": "process",
-        "pack": "qtyp-stats-process-assembly.zip",
-        "appdir": "qtyp-stats-process",
-        "svnsuf": "server/process/qtyp-stats-process",
-        "cnfsuf": "server/process/config/qtyp-stats-process"
+        "pack": "stats-process-assembly.zip",
+        "appdir": "stats-process",
+        "svnsuf": "server/process/stats-process",
+        "cnfsuf": "server/process/config/stats-process"
     },
     "qtyp-toutiao-process": {
         "form": "process",
@@ -244,17 +244,17 @@
     "ad-api": {
         "form": "node",
         "appdir": "ad-api",
-        "svnsuf": "ad/qtyp-ad"
+        "svnsuf": "ad/ad-api"
     },
     "api": {
         "form": "node",
         "appdir": "api",
-        "svnsuf": "server/qtyp"
+        "svnsuf": "server/api"
     },
     "integralapi": {
         "form": "node",
         "appdir": "integral-api",
-        "svnsuf": "server/qtyp-integral"
+        "svnsuf": "server/integral-api"
     },
     "auth": {
         "form": "node",
@@ -315,7 +315,7 @@
         "form": "static",
         "pack": "webcms.tar.gz",
         "appdir": "web/cms",
-        "svnsuf": "web/qtypcms"
+        "svnsuf": "web/cms"
     },
     "cdn": {
         "form": "static",

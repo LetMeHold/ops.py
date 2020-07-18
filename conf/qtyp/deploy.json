@@ -1,7 +1,7 @@
 {
     "dev": {
         "intro": "开发环境",
-        "monitor": "172.18.27.36:7092",
+        "monitor": "172.18.27.110:7092",
         "mlogin": "login/do_login",
         "mget_job": "ljob/get_online_ljobs",
         "mget_queue": "lqueue/get_online_lqueues",
@@ -11,9 +11,9 @@
         "mctl_center": "dubbo/change_check_status",
         "muser": "root",
         "mpwd": "a802cc95fbc98015cf4f416d08239d65",
-        "jks_url": "http://localhost:7181/jenkins-dev/",
+        "jks_url": "http://localhost:7181/jenkins/",
         "jks_usr": "admin",
-        "jks_token": "215bd707a99aad52b0c858add260f2ae",
+        "jks_token": "710b391a078bf1d094b30366fad6f454",
         "deploy": {
             "host-qtyp-dev": [
                 "qtyp-ad-center",
@@ -40,7 +40,7 @@
     },
     "test": {
         "intro": "测试环境",
-        "monitor": "172.18.203.167:7092",
+        "monitor": "172.18.27.111:7092",
         "mlogin": "login/do_login",
         "mget_job": "ljob/get_online_ljobs",
         "mget_queue": "lqueue/get_online_lqueues",
@@ -50,9 +50,9 @@
         "mctl_center": "dubbo/change_check_status",
         "muser": "root",
         "mpwd": "a802cc95fbc98015cf4f416d08239d65",
-        "jks_url": "http://localhost:7281/jenkins-test/",
+        "jks_url": "http://localhost:7181/jenkins/",
         "jks_usr": "admin",
-        "jks_token": "1eda2936b59921dc8dc08416f484ef79",
+        "jks_token": "710b391a078bf1d094b30366fad6f454",
         "deploy": {
             "host-qtyp-test": [
                 "webcms",
@@ -62,7 +62,7 @@
                 "qtyp-ad-center",
                 "qtyp-center",
                 "qtyp-stats-center",
-                "qtyp-stats-process",
+                "stats-process",
                 "qtyp-toutiao-process",
                 "cms-process",
                 "bid-process",
@@ -119,7 +119,7 @@
     },
     "pro": {
         "intro": "生产环境",
-        "monitor": "172.18.27.47:7092",
+        "monitor": "172.18.27.114:7092",
         "mlogin": "login/do_login",
         "mget_job": "ljob/get_online_ljobs",
         "mget_queue": "lqueue/get_online_lqueues",
@@ -129,9 +129,9 @@
         "mctl_center": "dubbo/change_check_status",
         "muser": "root",
         "mpwd": "640fe9e4816e90b1612ab04c2f817d6b",
-        "jks_url": "http://localhost:7081/jenkins/",
+        "jks_url": "http://localhost:7181/jenkins/",
         "jks_usr": "admin",
-        "jks_token": "b67a48d844fb221dff0c174d505e92e4",
+        "jks_token": "710b391a078bf1d094b30366fad6f454",
         "dadmin": "http://172.18.203.168:4080/dubbo-admin-2.8.4/",
         "dadmin_auth": "62afe3d635d2eca358225bb46154aec9",
         "deploy": {
@@ -149,8 +149,7 @@
             "host-qtyp-pro-data-01": [
                 "qtyp-bata-center",
                 "qtyp-stats-center",
-                "qtyp-stats-process",
-                "qtyp-toutiao-process",
+                "stats-process",
                 "cms-process",
                 "data-server"
             ],
@@ -158,28 +157,22 @@
                 "qtyp-bata-center",
                 "qtyp-stats-center",
                 "bata-process",
-                "data-process",
-                "rc-process",
                 "data-server"
             ],
             "host-qtyp-pro-java-01": [
                 "qtyp-center",
                 "bid-server",
                 "pay-server",
-                "monitor-server",
-                "weixin-server"
+                "monitor-server"
             ],
             "host-qtyp-pro-java-02": [
                 "qtyp-center",
                 "bid-server",
-                "pay-server",
-                "weixin-server"
+                "pay-server"
             ],
             "host-qtyp-pro-node-01": [
-                "weixin-process",
                 "search-server",
                 "qtyp-ad-center",
-                "activity-api",
                 "ad-api",
                 "api",
                 "auth",
@@ -192,7 +185,6 @@
             "host-qtyp-pro-node-02": [
                 "search-server",
                 "qtyp-ad-center",
-                "activity-api",
                 "ad-api",
                 "api",
                 "auth",
@@ -201,13 +193,13 @@
                 "data_channel",
                 "integralapi"
             ], 
-            "host-qtyp-pro-robot-01": [
-                "online-recommend-process",
-                "qtyp-center"
+            "host-qtyp-pro-dubbo-01": [
+                "qtyp-center",
+                "online-recommend-process"
             ],
-            "host-qtyp-pro-robot-02": [
-                "online-recommend-process",
-                "qtyp-center"
+            "host-qtyp-pro-dubbo-02": [
+                "qtyp-center",
+                "online-recommend-process"
             ],
             "host-qtyp-pro-process-01": [
                 "bid-process",
@@ -230,32 +222,20 @@
                 "online-bata-process",
                 "integral-server"
             ],
-            "host-qtyp-pro-integral-robot-01": [
+            "host-qtyp-pro-integral-process-01": [
                 "qtyp-integral-center",
                 "integral-process",
                 "integral-data-process"
             ],
-            "host-qtyp-pro-integral-robot-02": [
+            "host-qtyp-pro-integral-process-02": [
                 "qtyp-integral-center",
                 "integral-prizepool-process",
                 "integral-proxy-process"
             ],
             "host-qtyp-pro-hadoop-01": [
-                "hadoop",
                 "spark-exposure-statistics",
                 "spark-hot-statistics",
-                "spark-similarity-matrix-calculus",
-                "qtyp-data-clean",
-                "exposure-spark",
-                "rc-spark",
-                "rc-spark-realtime",
-                "rc-timer"
-            ],
-            "host-qtyp-pro-hadoop-02": [
-                "hadoop"
-            ],
-            "host-qtyp-pro-hadoop-03": [
-                "hadoop"
+                "spark-similarity-matrix-calculus"
             ]
         }
     }
