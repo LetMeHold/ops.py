@@ -132,7 +132,7 @@
         "jks_url": "http://localhost:7181/jenkins/",
         "jks_usr": "admin",
         "jks_token": "710b391a078bf1d094b30366fad6f454",
-        "dadmin": "http://172.18.203.168:4080/dubbo-admin-2.8.4/",
+        "dadmin": "http://172.18.27.112:4080/dubbo-admin-2.8.4/",
         "dadmin_auth": "62afe3d635d2eca358225bb46154aec9",
         "deploy": {
             "host-qtyp-pro-tengine": [
