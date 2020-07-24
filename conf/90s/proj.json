@@ -295,13 +295,15 @@
         "form": "static",
         "pack": "weblandpage.tar.gz",
         "appdir": "web/landingpage",
-        "svnsuf": "web/landpage"
+        "svnsuf": "web/landpage",
+        "owner": "landingpage:root"
     },
     "weblandpagev2": {
         "form": "static",
         "pack": "weblandpagev2.tar.gz",
         "appdir": "web/landingpage",
-        "svnsuf": "web/landpage_v2"
+        "svnsuf": "web/landpage_v2",
+        "owner": "landingpage:root"
     },
     "weblandpage_cdn": {
         "form": "static",

@@ -302,7 +302,8 @@
         "form": "static",
         "pack": "weblandpage.tar.gz",
         "appdir": "web/landingpage",
-        "svnsuf": "web/landpage"
+        "svnsuf": "web/landpage",
+        "owner": "cms:cms"
     },
     "weblandpagev2": {
         "form": "static",

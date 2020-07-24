@@ -177,6 +177,12 @@ class Model:
     def svnsuf(self):
         return GL.proj()[self.name()]['svnsuf']
 
+    def owner(self):
+        if GL.proj()[self.name()].has_key('owner'):
+            return GL.proj()[self.name()]['owner']
+        else:
+            return None
+
     def trunk(self):
         if self.__trunk == None:
             if GL.env() == 'pro':

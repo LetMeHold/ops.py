@@ -180,10 +180,15 @@ def up_weblandpagev2(mod, patch=False):
         out = ask('将在本地运行命令 (%s), 确认立刻执行吗？' % cmd, 'yes,no', 'no')
         if out == 'yes':
             localCmd(cmd)
-            tmpCmd = 'chmod -R g+w %s' % mod.appdir()
-            out = ask('将在 (%s) 运行命令 (%s), 确认立刻执行吗？' % (ip,tmpCmd), 'yes,no', 'no')
-            if out == 'yes':
-                remoteCmd(ip, tmpCmd)
+            if mod.owner() != None:
+                tmpCmd = 'chown -R %s %s' % (mod.owner(),mod.appdir())
+                out = ask('将在 (%s) 运行命令 (%s), 确认立刻执行吗？' % (ip,tmpCmd), 'yes,no', 'no')
+                if out == 'yes':
+                    remoteCmd(ip, tmpCmd)
+            #tmpCmd = 'chmod -R g+w %s' % mod.appdir()
+            #out = ask('将在 (%s) 运行命令 (%s), 确认立刻执行吗？' % (ip,tmpCmd), 'yes,no', 'no')
+            #if out == 'yes':
+                #remoteCmd(ip, tmpCmd)
 
 def up_wapv2(mod, patch=False):
     pk = '%s/wapv2.tar.gz' % GL.pkdir()
@@ -267,16 +272,16 @@ def up_web(mod, patch=False):
         out = ask('将在本地运行命令 (%s), 确认立刻执行吗？' % cmd, 'yes,no', 'no')
         if out == 'yes':
             localCmd(cmd)
-            if mod.name() == 'weblandpage':
-                tmpCmd = 'chmod -R g+w %s' % mod.appdir()
+            if mod.name()=='weblandpage' and mod.owner()!=None:
+                tmpCmd = 'chown -R %s %s' % (mod.owner(),mod.appdir())
                 out = ask('将在 (%s) 运行命令 (%s), 确认立刻执行吗？' % (ip,tmpCmd), 'yes,no', 'no')
                 if out == 'yes':
                     remoteCmd(ip, tmpCmd)
-            elif mod.name() == 'webwap':
-                tmpCmd = 'chmod -R g+w %s/other/jdappintroduce' % mod.appdir()
-                out = ask('将在 (%s) 运行命令 (%s), 确认立刻执行吗？' % (ip,tmpCmd), 'yes,no', 'no')
-                if out == 'yes':
-                    remoteCmd(ip, tmpCmd)
+            #elif mod.name() == 'webwap':
+                #tmpCmd = 'chmod -R g+w %s/other/jdappintroduce' % mod.appdir()
+                #out = ask('将在 (%s) 运行命令 (%s), 确认立刻执行吗？' % (ip,tmpCmd), 'yes,no', 'no')
+                #if out == 'yes':
+                    #remoteCmd(ip, tmpCmd)
 
 def up_h5v1(mod, patch=False):
     pk = mod.pk()

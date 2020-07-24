@@ -295,7 +295,8 @@
         "form": "static",
         "pack": "weblandpage.tar.gz",
         "appdir": "web/landingpage",
-        "svnsuf": "web/landpage"
+        "svnsuf": "web/landpage",
+        "owner": "config:config"
     },
     "weblandpagev2": {
         "form": "static",
