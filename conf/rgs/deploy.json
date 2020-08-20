@@ -167,12 +167,14 @@
             "host-rgs-pro-data-01": [
                 "roogoods-bata-center",
                 "roogoods-stats-center",
-                "cms-process"
+                "cms-process",
+                "data-server"
             ],
             "host-rgs-pro-data-02": [
                 "roogoods-bata-center",
                 "roogoods-stats-center",
-                "bata-process"
+                "bata-process",
+                "data-server"
             ],
             "host-rgs-pro-dubbo-01": [
                 "recommend-process"
